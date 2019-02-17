@@ -13,7 +13,7 @@ author: Jonathan Dierckens
 
 #### 3,5 km met 800 hoogtemeters - Dalen: 1u - Stijgen: 1u30 à 2u of met de Telecabine de Venosc
 
-#### Rue Sainte-Luc, Venosc
+#### Vertrekpunt: Rue Sainte-Luc, Venosc
 
 ![dalwandeling naar venosc](./dalwandeling-venosc.jpg)
 
@@ -37,7 +37,7 @@ Daarna kan je met een gerust gemoed de Télécabine terug naar boven nemen. De e
 
 #### 7 km in 2u, heen-en terug, relatief vlak
 
-#### Avenue de la Muzelle, Mont de Lans - Télésiège de Vallée Blanche
+#### Vertrekpunt: Avenue de la Muzelle, Mont de Lans - Télésiège de Vallée Blanche
 
 ![de weg naar Molière](./L2A-to-Moliere.png)
 
@@ -54,6 +54,8 @@ Eens je achter de berg bent verdwenen kom je wat tussen de bomen, het is hier er
 ### Grotte de glace en wandelroute bovenop de berg
 
 #### Must-do: Easy walk, maar een ticket voor de liften kopen is een voorwaarde
+
+#### Vertrekpunt: Centre de village, de Jandri lift
 
 Wat je als wandelaar zeker moet doen als je in Les Deux Alpes bent is - op zijn minst één dag - een liftenpas nemen om de wandelroutes en "things to do" in de hogere regionen van het gebergte te verkennen. Laat je informeren door de mensen achter de balie van de ski loketten, er is ook een speciaal plannetje met de wandelingen en de liften die je als wandelaar wel en niet mag nemen.
 
