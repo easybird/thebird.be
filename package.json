@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hero-blog",
-  "version": "2.0.0",
-  "author": "Greg Lobinski <greglobinski@gmail.com>",
+  "name": "thebird.be",
+  "version": "1.0.0",
+  "author": "Easybird <info@easybird.be>",
   "license": "MIT",
   "dependencies": {
     "antd": "^3.7.0",
@@ -54,7 +54,8 @@
     "yaml-loader": "^0.5.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "mountains"
   ],
   "scripts": {
     "build": "gatsby build",
