@@ -1,11 +1,11 @@
 ---
-title: Babysits in Les Deux Alpes
+title: Babysit in Les Deux Alpes
 category: "kids en bergen"
 cover: kids.jpg
 author: Jonathan Dierckens
 ---
 
-![Kids in de Alpens](./kids.jpg)
+![Kids in de Alpen](./kids.jpg)
 
 Een kid van 1+ en eentje van 2+, daar kan je niet mee op een plank of een lat staan. Toch moet dat je niet tegenhouden om naar de bergen te gaan.
 
