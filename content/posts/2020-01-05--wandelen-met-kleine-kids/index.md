@@ -17,7 +17,11 @@ En het hoeft heus niet direct een op en top professionele Pulka te zijn om dagto
 
 ## Van de Vallée Blanche, over Bergerie Kanata, naar Bons
 
-De tweede dag na onze aankomst dachten we aan een klein verkennend tochtje tot aan Bergerie Kanata, op de Vallée Blanche. Gewoon iets drinken in de zon, en terug. Was het plan. Onze jongste lag na 2km al in slaap in het sleetje 😴. Hilarisch. Het zag ernaar uit dat iedereen het wel naar zijn zin had, dus we deden er nog een kleine ommetje richting Bons bij! Mooie wandeling, waarbij we misschien 15 man zijn tegengekomen! Superweinig, wetende dat het heel mooi weer was en dat eind december de drukste periode van het jaar is in Les Deux Alpes!
+De tweede dag na onze aankomst dachten we aan een klein verkennend tochtje tot aan Bergerie Kanata, op de Vallée Blanche. Gewoon iets drinken in de zon, en terug. Was het plan. Onze jongste lag na 2km al in slaap in het sleetje 😴. Hilarisch.
+
+Het zag ernaar uit dat iedereen het wel naar zijn zin had, dus we deden er nog een kleine ommetje richting Bons bij!
+
+Mooie wandeling, waarbij we misschien 15 man zijn tegengekomen! Superweinig, wetende dat het heel mooi weer was en dat eind december de drukste periode van het jaar is in Les Deux Alpes!
 
 <iframe class="embedly-embed" frameborder="0" scrolling="no" allowfullscreen src="https://cdn.embedly.com/widgets/media.html?src=https://www.relive.cc/view/vYvrD1z3AL6/widget?r=embed-site&url=https://www.relive.cc/view/vYvrD1z3AL6?r=embed-site&image=https://www.relive.cc/view/vYvrD1z3AL6/png?x-ref=embed-site&key=f1631a41cb254ca5b035dc5747a5bd75&type=text/html&schema=relive" width="800" height="626"></iframe>
 

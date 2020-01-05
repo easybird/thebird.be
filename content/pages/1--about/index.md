@@ -1,6 +1,6 @@
 ---
-title: About
-menuTitle: About
+title: OVer
+menuTitle: Over
 ---
 
 Hier komt de uitleg over wat we doen.
