@@ -1,8 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './article.css';
 
 const Article = props => {
-  const { children, theme } = props;
+  const {children, theme} = props;
 
   return (
     <React.Fragment>
@@ -22,9 +23,7 @@ const Article = props => {
         }
         @from-width desktop {
           .article {
-            padding: ${`calc(${theme.space.default} * 2 + 90px) 0 calc(${
-              theme.space.default
-            } * 2)`};
+            padding: ${`calc(${theme.space.default} * 2 + 90px) 0 calc(${theme.space.default} * 2)`};
             max-width: ${theme.text.maxWidth.desktop};
           }
         }
@@ -35,7 +34,7 @@ const Article = props => {
 
 Article.propTypes = {
   children: PropTypes.node.isRequired,
-  theme: PropTypes.object.isRequired
+  theme: PropTypes.object.isRequired,
 };
 
 export default Article;
