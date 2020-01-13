@@ -11,7 +11,7 @@ author: Jonathan Dierckens
 _Een nieuw jaar, een nieuwe uitdaging_ in het trailrunnen. Grenzen weer een beetje verleggen. 55 km, iets verder dan vorig jaar. 3100 hoogtemeters, +/- hetzelfde als in de [Summit Trail](/summit-trail-in-l2a).
 
 Op aanraden van een collega voor de Peades d'Aigua gekozen in de valei d'Aran in de Pyreneeën. Dit nieuwe UTMB-event host 3 verschillende afstanden.
-Het kleine zusje", zoals zij het noemen, wordt mijn uitdaging van 2020. 😄
+Het "kleine zusje", zoals zij het noemen, wordt - te midden van het EK voetbal - mijn uitdaging van 2020. 😄
 
 ## 🗻 De bergen
 
@@ -24,6 +24,10 @@ De Pyreneeën, een nieuwe wereld voor me! Ik ben benieuwd.. Maximum hoogte wordt
 Naast de Peades d'Aigua vinden er nog twee UTMB wedstrijden plaats. Eén van 105 km, de Camins de Hèr met 6500 hoogtemeters, en de magische Torn dera Val d'Aran, een wedstrijd van maar liest 162 km met 10600 hoogtemeters.
 
 De ambitie is simpel: de wedstrijd uitlopen. Daarnaast wil ik er vooral inspiratie opdoen van de atleten die zich aan **het dubbele en driedubbele van mijn afstand** wagen. Eens opsnuiven of zoiets ook ooit mijn terrein wordt of niet.
+
+## 🎱 ITRA punten
+
+Daarnaast vind ik het wel cool om eens deel te nemen aan een wedstrijd die niet zomaar open is. Om te mogen deelnemen moet je namelijk in het bezit zijn van <a href="https://itra.run/" target="_blank">ITRA-punten</a> 🎢. Meerbepaald moet je al een wedstrijd gelopen hebben met een waarde van 2 ITRA punten na januari 2018. Gelukkig was mijn wedstrijd in L2A vorig jaar zo-eentje. 👌 Als ik deze wedstrijd deze zomer weet te finishen, zal ik weer 3 ITRA-punten en 9 "Running stones" rijker zijn. 😎
 
 ## 📹 Training
 
