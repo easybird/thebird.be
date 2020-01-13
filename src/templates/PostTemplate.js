@@ -72,6 +72,7 @@ export const postQuery = graphql`
           }
         }
       }
+      excerpt
     }
     authornote: markdownRemark(fileAbsolutePath: { regex: "/author/" }) {
       id

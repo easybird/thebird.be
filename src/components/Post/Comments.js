@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import FacebookProvider, { Comments as FBComments } from "react-facebook";
+import { FacebookProvider, Comments as FBComments } from "react-facebook";
 
 import config from "../../../content/meta/config";
 
 const Comments = props => {
   const { facebook, slug, theme } = props;
+
+  console.log("whutever", config.siteUrl, slug);
 
   return (
     <React.Fragment>
