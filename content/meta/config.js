@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "The Bird - mountain lovers", // <title>
   shortSiteTitle: "The Bird - mountain lovers", // <title> ending for posts and pages
-  siteDescription: "HeroBlog is a GatsbyJS starter.",
+  siteDescription: "A blog about Live, Love and Life",
   siteUrl: "https://thebird.be",
   pathPrefix: "",
   siteImage: "preview.jpg",
