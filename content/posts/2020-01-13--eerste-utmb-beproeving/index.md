@@ -23,7 +23,7 @@ De Pyreneeën, een nieuwe wereld voor me! Ik ben benieuwd.. Maximum hoogte wordt
 
 Naast de Peades d'Aigua vinden er nog twee UTMB wedstrijden plaats. Eén van 105 km, de Camins de Hèr met 6500 hoogtemeters, en de magische Torn dera Val d'Aran, een wedstrijd van maar liest 162 km met 10600 hoogtemeters.
 
-De ambitie is wederom uitlopen. Daarnaast wil ik er vooral inspiratie opdoen van de atleten die zich aan **het dubbele en driedubbele van mijn afstand** wagen. Eens opsnuiven of zoiets ook ooit mijn terrein wordt of niet.
+De ambitie is simpel: de wedstrijd uitlopen. Daarnaast wil ik er vooral inspiratie opdoen van de atleten die zich aan **het dubbele en driedubbele van mijn afstand** wagen. Eens opsnuiven of zoiets ook ooit mijn terrein wordt of niet.
 
 ## 📹 Training
 
