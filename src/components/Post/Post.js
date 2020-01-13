@@ -4,6 +4,7 @@ import "prismjs/themes/prism-okaidia.css";
 
 import asyncComponent from "../AsyncComponent";
 import Headline from "../Article/Headline";
+import Subtitle from "../Article/Subtitle";
 import Bodytext from "../Article/Bodytext";
 import Meta from "./Meta";
 import Author from "./Author";
@@ -24,7 +25,7 @@ const Post = props => {
     post: {
       html,
       fields: { prefix, slug },
-      frontmatter: { title, author, category }
+      frontmatter: { title, subtitle, author, category }
     },
     authornote,
     facebook,
@@ -37,6 +38,7 @@ const Post = props => {
     <React.Fragment>
       <header>
         <Headline title={title} theme={theme} />
+        {subtitle && <Subtitle title={subtitle} theme={theme} subtitle />}
         <Meta prefix={prefix} author={author} category={category} theme={theme} />
       </header>
       <Bodytext html={html} theme={theme} />
