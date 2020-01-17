@@ -1,22 +1,16 @@
-import { FaArrowRight } from "react-icons/fa/";
-import { FaCalendar } from "react-icons/fa/";
-import { FaTag } from "react-icons/fa/";
 import Img from "gatsby-image";
-import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
-const Item = props => {
+const Quote = props => {
   const {
     theme,
     post: {
-      excerpt,
-      fields: { slug, prefix },
       frontmatter: {
         title,
-        category,
+        author,
         cover: {
-          children: [{ fluid }]
+          children: [{ quoteImage }]
         }
       }
     }
@@ -25,25 +19,13 @@ const Item = props => {
   return (
     <React.Fragment>
       <li>
-        <Link to={slug} key={slug} className="link">
-          <div className="gatsby-image-outer-wrapper">
-            <Img fluid={fluid} />
-          </div>
-          <h1>
-            {title} <FaArrowRight className="arrow" />
-          </h1>
-          <p className="meta">
-            <span>
-              <FaCalendar size={18} /> {prefix}
-            </span>
-            {category && (
-              <span>
-                <FaTag size={18} /> {category}
-              </span>
-            )}
-          </p>
-          <p>{excerpt}</p>
-        </Link>
+        <div className="quote">
+          <h1>{title}</h1>
+          <h2>{author}</h2>
+        </div>
+        <div className="gatsby-image-outer-wrapper">
+          <Img fluid={quoteImage} />
+        </div>
       </li>
 
       {/* --- STYLES --- */}
@@ -51,6 +33,34 @@ const Item = props => {
         :global(.link) {
           width: 100%;
           color: ${theme.text.color.primary};
+        }
+
+        :global(.quote) {
+          position: relative;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 800;
+          padding: 30px 0;
+          width: 100%;
+          max-width: 500px;
+          z-index: 1;
+          margin: 40px auto;
+          align-self: center;
+          &::after {
+            position: absolute;
+            content: "”";
+            font-size: 10rem;
+            line-height: 0;
+            bottom: -43px;
+            right: 30px;
+          }
+          &::before {
+            position: absolute;
+            content: "“";
+            font-size: 10rem;
+            line-height: 0;
+            top: 43px;
+            left: -30px;
+          }
         }
 
         li {
@@ -109,6 +119,10 @@ const Item = props => {
             position: relative;
             top: 7px;
           }
+        }
+
+        h2 {
+          text-align: right;
         }
 
         .meta {
@@ -195,25 +209,6 @@ const Item = props => {
             padding: ${`0 calc(${theme.space.default} * 2)`};
           }
           li {
-            &:hover {
-              border: 1px solid ${theme.line.color};
-              box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.03);
-
-              &:after {
-                bottom: ${`calc(${theme.space.default} * -2.5)`};
-              }
-              :global(.gatsby-image-wrapper) {
-                transform: scale(1.1);
-              }
-              h1 {
-                color: ${theme.blog.h1.hoverColor};
-              }
-              :global(.arrow) {
-                opacity: 1;
-                stroke: ${theme.color.special.attention};
-                transform: translateX(0);
-              }
-            }
             :global(.gatsby-image-wrapper) {
               transition: all ${theme.time.duration.default};
             }
@@ -234,9 +229,9 @@ const Item = props => {
   );
 };
 
-Item.propTypes = {
+Quote.propTypes = {
   post: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired
 };
 
-export default Item;
+export default Quote;

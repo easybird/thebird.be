@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Item from "./Item";
+import Quote from "./Quote";
 
 const Blog = props => {
   const { posts, theme } = props;
@@ -14,10 +15,15 @@ const Blog = props => {
             const {
               node,
               node: {
-                fields: { slug }
+                fields: { slug },
+                frontmatter: { type }
               }
             } = post;
-            return <Item key={slug} post={node} theme={theme} />;
+            return type === "quote" ? (
+              <Quote key={slug} post={node} theme={theme} />
+            ) : (
+              <Item key={slug} post={node} theme={theme} />
+            );
           })}
         </ul>
       </main>

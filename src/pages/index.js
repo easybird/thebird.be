@@ -88,12 +88,16 @@ export const query = graphql`
           frontmatter {
             title
             subtitle
+            type
             category
             author
             cover {
               children {
                 ... on ImageSharp {
                   fluid(maxWidth: 800, maxHeight: 360) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                  quoteImage: fluid(maxWidth: 800, maxHeight: 800) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
