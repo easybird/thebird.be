@@ -7,11 +7,11 @@ author: Jonathan Dierckens
 
 ![Kids in de Alpen](./kids.jpg)
 
-Een kid van 1+ en eentje van 2+, daar kan je niet mee op een plank of een lat staan. Toch moet dat je niet tegenhouden om naar de bergen te gaan.
+Wil je met je hele kleine kids naar de Alpen en toch op een plank of een lat staan? Het kan.
 
-We gingen met ons viertjes naar Les Deux Alpes om er het begin van 2020 te vieren. We maakten samen enkele leuke wandelingen, de kids zijn beide zot van hun sleetje, waardoor we leuk en zonder veel moeite [lange wandelingen konden maken door de sneeuw](/wandelen-met-kleine-kids).
+We gingen met ons viertjes naar Les Deux Alpes om er het begin van 2020 te vieren. We maakten samen enkele leuke wandelingen, de kids zijn allebei zot van hun sleetje, waardoor we leuk en zonder veel moeite [lange wandelingen konden maken door de sneeuw](/wandelen-met-kleine-kids).
 
-Maar soms wil je ook wel eens met je twee er tussenuit, en wil je nog eens op die plank of latten staan! Geen nood, in Les Deux Alpes kan je ze [in een goeie creche of infanterie achterlaten](https://www.les2alpes.com/en/facilities-for-children-childcare.html), of een hele rits aan babysits contacteren. Sommige komen bij je ter plaatse, andere hebben een soort mini-opvang bij hun thuis.
+Maar soms wil je ook wel eens met zijn tweetjes er tussenuit, en wil je nog eens op die plank of latten staan! Geen nood, in Les Deux Alpes kan je ze [in een goeie creche of infanterie achterlaten](https://www.les2alpes.com/en/facilities-for-children-childcare.html), of een hele rits aan babysits contacteren. Sommige komen bij je ter plaatse, andere hebben een soort mini-opvang bij hun thuis.
 
 De creche is er voor de hele kleintjes tot 2 jaar, de infanterie is er voor de +2 jarigen. Vanaf 3 kan je ze ook bij ESF zelf op de latjes zetten.
 
