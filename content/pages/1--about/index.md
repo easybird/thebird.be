@@ -21,7 +21,7 @@ Nieuwste passie, maar eentje die me ook een gevoel van vrijheid en autonomie bez
 
 ### Wandelen in de bergen
 
-Met kids en vrouwtje door de bergen trekken, samen op ontdekkingstocht. Heerlijk.
+Met vrouw en kinderen door de bergen trekken, samen op ontdekkingstocht. Heerlijk.
 
 ### Klimmen
 
