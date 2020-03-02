@@ -27,20 +27,46 @@ Omdat ik daar in de lokale klimclub zat, had ik het geluk om daar heel wat local
 
 Het was een warme winter, en de sneeuw was in het dorp van Venosc (op minder dan 1000 meter) al fel verdwenen. Het eerste deel werd dus hiken, met al ons materiaal op onze rug.
 
-![Materiaal](./materiaal.jpg)
-![Ik met split](./bird-split.jpg)
+<!-- ![Materiaal](./materiaal.jpg) -->
+<!-- ![Ik met split](./bird-split.jpg) -->
+![Climb up no snow ](./climb-up-no-snow2.jpg)
 
 ## Overnachten
 
-Als je in het holst van de nacht vertrekt, en een ervaren tourskiër bent, kan je de tocht in één keer doen. Echter, als je maar in de late namiddag de top bereikt, en met de warmte van midden maart al (in volle zon), heb je heel veel meer gevaar op lawines zijn het snowboarden/skiën naar beneden. Bovendien is het ook aangenaam om de tocht in 2 dagen te doen. Er is een refuge, die enkel bemand is in de zomer, aan het Lac de la Muzelle, ergens in het midden op de tocht. De vertrekken van in de zomer zijn dicht, maar er is een mini hutje bij die steeds open is, met een keukentje en enkele stapelbedden. Genoeg om er de nacht door te brengen en even te rusten op weg naar de top.
+Als je in het holst van de nacht vertrekt, en een ervaren tourskiër bent, kan je de tocht in één keer doen. Echter, als je maar in de late namiddag de top bereikt, en met de warmte van midden maart al (in volle zon), heb je heel veel meer gevaar op lawines bij het snowboarden/skiën naar beneden.
+
+Bovendien is het ook aangenaam om de tocht in 2 dagen te doen. Er is een refuge, die enkel bemand is in de zomer, aan het Lac de la Muzelle, ergens in het midden op de tocht. De vertrekken van in de zomer zijn dicht, maar er is een mini hutje bij die steeds open is, met een keukentje en enkele stapelbedden. Genoeg om er de nacht door te brengen en even te rusten op weg naar de top.
 
 ![Koken in de refuge](./refuge-cooking.jpg)
 
+## Memorabele momenten op weg naar de top
 
-![Ik met baard](./bird-baard.jpg)
+### De steile weg naar boven
 
+De 2de dag begon met de "crampons" aan de voeten. Ijzig en zeer steil. Maar we waren meteen opgewarmd. :-)
 
-![Ik](./bird.jpg)
+![Steile weg naar boven](./climb-up-steep-walk2.jpg)
 
+### De bergkammen op weg naar La Muzelle
 
-![Climb up no snow](./climb-up-no-snow.jpg)
+Dit had ik nooit eerder gedaan, toch niet op die manier. Zowel links als rechts een steile wand naar beneden, je voelt je echt op de top van de wereld.
+
+![Bergkam](./muzelle-cretes-portrait.jpg)
+
+### De laatste loodjes
+
+Eens rond het "oog van de La Muzelle" begon nog een steile klim op de gletcher naar boven. Boven de 3200 meter was dit wel nog even zwoegen, maar dikke fun.
+
+![Ski rando](./climb-up.jpg)
+
+## Langs het oog
+
+Voor wie het uitzicht van de La Muzelle kent, en de mythe rond het "L'Œil de la Muzelle" die Les Deux Alpes constant in de gaten heeft. Het oog is GIGANTISCH, eens je er in de buurt van bent. Ziehier, linksboven op deze foto.
+
+![Het oog](./ski-down.jpg)
+
+## De weg naar beneden
+
+Na twee dagen zwoegen, en 30 minuten genieten, sta je dus weer beneden. Aan de voet van de berg die je twee dagen daarvoor vol goeie moed wou overwinnen. Het was het meer dan waard.
+
+![Naar beneden boarden](./split-down.jpg)
