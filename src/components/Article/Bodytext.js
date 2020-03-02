@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const Bodytext = props => {
-  const { html, theme } = props;
+  const { body, theme } = props;
 
   return (
     <React.Fragment>
-      <div className="bodytext" dangerouslySetInnerHTML={{ __html: html }} />
-
+      <MDXRenderer className="bodytext">{body}</MDXRenderer>
       <style jsx>{`
         .bodytext {
+          background-color: red;
           animation-name: bodytextEntry;
           animation-duration: ${theme.time.duration.long};
 
@@ -78,7 +79,7 @@ const Bodytext = props => {
 };
 
 Bodytext.propTypes = {
-  html: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
   theme: PropTypes.object.isRequired
 };
 

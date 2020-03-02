@@ -80,7 +80,7 @@ class Layout extends React.Component {
       <StaticQuery
         query={graphql`
           query LayoutQuery {
-            pages: allMarkdownRemark(
+            pages: allMdx(
               filter: { fileAbsolutePath: { regex: "//pages//" }, fields: { prefix: { regex: "/^\\d+$/" } } }
               sort: { fields: [fields___prefix], order: ASC }
             ) {
@@ -97,16 +97,16 @@ class Layout extends React.Component {
                 }
               }
             }
-            footnote: markdownRemark(fileAbsolutePath: { regex: "/footnote/" }) {
+            footnote: mdx(fileAbsolutePath: { regex: "/footnote/" }) {
               id
-              html
+              body
             }
           }
         `}
         render={data => {
           const { children } = this.props;
           const {
-            footnote: { html: footnoteHTML },
+            footnote: { body: footnoteBody },
             pages: { edges: pages }
           } = data;
 
@@ -121,7 +121,7 @@ class Layout extends React.Component {
                       theme={this.state.theme}
                     />
                     <main>{children}</main>
-                    <Footer html={footnoteHTML} theme={this.state.theme} />
+                    <Footer body={footnoteBody} theme={this.state.theme} />
 
                     {/* --- STYLES --- */}
                     <style jsx>{`
@@ -194,7 +194,7 @@ export default Layout;
 /*
 export const postQuery = graphql`
   query LayoutQuery {
-    pages: allMarkdownRemark(
+    pages: allMdx(
       filter: { fileAbsolutePath: { regex: "//pages//" }, fields: { prefix: { regex: "/^\\d+$/" } } }
       sort: { fields: [fields___prefix], order: ASC }
     ) {
@@ -211,9 +211,9 @@ export const postQuery = graphql`
         }
       }
     }
-    footnote: markdownRemark(fileAbsolutePath: { regex: "/footnote/" }) {
+    footnote: mdx(fileAbsolutePath: { regex: "/footnote/" }) {
       id
-      html
+      body
     }
   }
 `;

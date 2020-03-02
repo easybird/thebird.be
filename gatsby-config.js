@@ -3,7 +3,7 @@ const config = require("./content/meta/config");
 const transformer = require("./src/utils/algolia");
 
 const query = `{
-  allMarkdownRemark( filter: { fields: { slug: { ne: null } } }) {
+  allMdx( filter: { fields: { slug: { ne: null } } }) {
     edges {
       node {
         objectID: fileAbsolutePath
@@ -25,7 +25,7 @@ const queries = [
   {
     query,
     transformer: ({ data }) => {
-      return data.allMarkdownRemark.edges.reduce(transformer, []);
+      return data.allMdx.edges.reduce(transformer, []);
     }
   }
 ];
@@ -95,9 +95,10 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
           `gatsby-plugin-sharp`,
           {
             resolve: `gatsby-remark-images`,
@@ -198,7 +199,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: `gatsby-plugin-feed-mdx`,
       options: {
         query: `
           {
@@ -214,8 +215,8 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.fields.prefix,
@@ -227,7 +228,7 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   limit: 1000,
                   sort: { order: DESC, fields: [fields___prefix] },
                   filter: {

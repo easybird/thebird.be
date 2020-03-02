@@ -9,7 +9,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const slug = createFilePath({ node, getNode });
     const fileNode = getNode(node.parent);
     const source = fileNode.sourceInstanceName;
@@ -55,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(
+            allMdx(
               ` +
           filters +
           `
@@ -85,7 +85,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
 
-        const items = result.data.allMarkdownRemark.edges;
+        const items = result.data.allMdx.edges;
 
         // Create category list
         const categorySet = new Set();
@@ -105,7 +105,7 @@ exports.createPages = ({ graphql, actions }) => {
         // Create category pages
         const categoryList = Array.from(categorySet);
         categoryList.forEach(category => {
-          const whatever = createPage({
+          createPage({
             path: `/category/${_.kebabCase(category)}/`,
             component: categoryTemplate,
             context: {
@@ -113,7 +113,6 @@ exports.createPages = ({ graphql, actions }) => {
               category
             }
           });
-          console.log("created", category, whatever);
         });
 
         // Create posts

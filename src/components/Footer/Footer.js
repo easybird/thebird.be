@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const Footer = props => {
-  const { html, theme } = props;
+  const { body, theme } = props;
 
   return (
     <React.Fragment>
-      <footer className="footer" dangerouslySetInnerHTML={{ __html: html }} />
+      <MDXRenderer lassName="footer">{body}</MDXRenderer>
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -51,7 +52,7 @@ const Footer = props => {
 };
 
 Footer.propTypes = {
-  html: PropTypes.string,
+  body: PropTypes.string,
   theme: PropTypes.object.isRequired
 };
 

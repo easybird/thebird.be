@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
 import config from "../../../content/meta/config";
 import avatar from "../../images/png/avatar.png";
@@ -16,7 +17,7 @@ const Author = props => {
             alt={config.siteTitle}
           />
         </div>
-        <div className="note" dangerouslySetInnerHTML={{ __html: note }} />
+        <MDXRenderer className="note">{note}</MDXRenderer>
       </div>
 
       {/* --- STYLES --- */}

@@ -54,7 +54,7 @@ const CategoryPage = props => {
             </header>
             {categoryList.map(item => (
               <section key={item[0]}>
-                <Link to={`category/${kebabCase(item[0])}`}>
+                <Link to={`/category/${kebabCase(item[0])}`}>
                   <h2>
                     <FaTag /> {item[0]}
                   </h2>
@@ -90,7 +90,7 @@ export default CategoryPage;
 //eslint-disable-next-line no-undef
 export const query = graphql`
   query PostsQuery {
-    posts: allMarkdownRemark(
+    posts: allMdx(
       filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
       sort: { fields: [fields___prefix], order: DESC }
     ) {

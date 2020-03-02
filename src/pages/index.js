@@ -74,7 +74,7 @@ export default IndexPage;
 //eslint-disable-next-line no-undef
 export const query = graphql`
   query IndexQuery {
-    posts: allMarkdownRemark(
+    posts: allMdx(
       filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
       sort: { fields: [fields___prefix], order: DESC }
     ) {
