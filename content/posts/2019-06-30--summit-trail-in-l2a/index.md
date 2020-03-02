@@ -1,6 +1,6 @@
 ---
 title: Summit Trail in Les Deux Alpes
-category: "trailrunnen"
+categories: "trailrunnen, les deux alpes"
 cover: summit-trail-cover.jpg
 author: Jonathan Dierckens
 ---

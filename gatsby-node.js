@@ -1,4 +1,5 @@
 //const webpack = require("webpack");
+const parseCategories = require("./src/utils/parseCategories").parseCategories;
 const _ = require("lodash");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const path = require("path");
@@ -44,17 +45,20 @@ exports.createPages = ({ graphql, actions }) => {
     const categoryTemplate = path.resolve("./src/templates/CategoryTemplate.js");
 
     // Do not create draft post files in production.
-    let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || "development"
-    console.log(`Using environment config: '${activeEnv}'`)
+    let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || "development";
+    console.log(`Using environment config: '${activeEnv}'`);
     let filters = `filter: { fields: { slug: { ne: null } } }`;
-    if (activeEnv == "production") filters = `filter: { fields: { slug: { ne: null } , prefix: { ne: null } } }`
+    if (activeEnv == "production")
+      filters = `filter: { fields: { slug: { ne: null } , prefix: { ne: null } } }`;
 
     resolve(
       graphql(
         `
           {
             allMarkdownRemark(
-              ` + filters + `
+              ` +
+          filters +
+          `
               sort: { fields: [fields___prefix], order: DESC }
               limit: 1000
             ) {
@@ -68,7 +72,7 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   frontmatter {
                     title
-                    category
+                    categories
                   }
                 }
               }
@@ -88,25 +92,28 @@ exports.createPages = ({ graphql, actions }) => {
         items.forEach(edge => {
           const {
             node: {
-              frontmatter: { category }
+              frontmatter: { categories }
             }
           } = edge;
 
-          if (category && category !== null) {
-            categorySet.add(category);
+          const parsedCategories = parseCategories(categories);
+          if (parsedCategories.length > 0) {
+            parsedCategories.forEach(category => categorySet.add(category));
           }
         });
 
         // Create category pages
         const categoryList = Array.from(categorySet);
         categoryList.forEach(category => {
-          createPage({
+          const whatever = createPage({
             path: `/category/${_.kebabCase(category)}/`,
             component: categoryTemplate,
             context: {
+              categoryRegex: `/${category}/`,
               category
             }
           });
+          console.log("created", category, whatever);
         });
 
         // Create posts

@@ -1,6 +1,6 @@
 ---
 title: Sneeuwwandeling met kleine kids
-category: "kids en bergen"
+categories: "kids en bergen, wandelen, les deux alpes"
 cover: wandelen-kids.JPG
 author: Jonathan Dierckens
 ---

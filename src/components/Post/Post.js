@@ -25,7 +25,7 @@ const Post = props => {
     post: {
       html,
       fields: { prefix, slug },
-      frontmatter: { title, subtitle, author, category }
+      frontmatter: { title, subtitle, author, categories }
     },
     authornote,
     facebook,
@@ -39,7 +39,7 @@ const Post = props => {
       <header>
         <Headline title={title} theme={theme} />
         {subtitle && <Subtitle title={subtitle} theme={theme} subtitle />}
-        <Meta prefix={prefix} author={author} category={category} theme={theme} />
+        <Meta prefix={prefix} author={author} categories={categories} theme={theme} />
       </header>
       <Bodytext html={html} theme={theme} />
       <footer>

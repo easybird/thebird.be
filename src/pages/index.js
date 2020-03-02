@@ -89,7 +89,7 @@ export const query = graphql`
             title
             subtitle
             type
-            category
+            categories
             author
             cover {
               children {

@@ -1,7 +1,7 @@
 ---
 title: 1ste UTMB beproeving - Val d'Aran
 subtitle: Peades d'Aigua, het kleine zusje van 55 km
-category: "trailrunnen"
+categories: "trailrunnen, pyreneeën"
 cover: valdaran.png
 author: Jonathan Dierckens
 ---

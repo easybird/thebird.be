@@ -1,35 +1,47 @@
-import {FaTag} from 'react-icons/fa/';
-import PropTypes from 'prop-types';
-import React from 'react';
-import {graphql} from 'gatsby';
-import {ThemeContext} from '../layouts';
-import Article from '../components/Article/';
-import Headline from '../components/Article/Headline';
-import List from '../components/List';
-import Seo from '../components/Seo';
+import { FaTag } from "react-icons/fa/";
+import PropTypes from "prop-types";
+import React from "react";
+import { graphql } from "gatsby";
+import { ThemeContext } from "../layouts";
+import Article from "../components/Article/";
+import Headline from "../components/Article/Headline";
+import List from "../components/List";
+import Seo from "../components/Seo";
+import { parseCategories } from "../utils/parseCategories";
+import { kebabCase } from "lodash";
+import { Link } from "gatsby";
 
 const CategoryPage = props => {
   const {
-    data: {posts: {edges: posts}, site: {siteMetadata: {facebook}}},
+    data: {
+      posts: { edges: posts },
+      site: {
+        siteMetadata: { facebook }
+      }
+    }
   } = props;
 
   // Create category list
-  const categories = {};
-  posts.forEach (edge => {
-    const {node: {frontmatter: {category}}} = edge;
-
-    if (category && category != null) {
-      if (!categories[category]) {
-        categories[category] = [];
+  const detectedCategoriesInPosts = {};
+  posts.forEach(edge => {
+    const {
+      node: {
+        frontmatter: { categories }
       }
-      categories[category].push (edge);
-    }
+    } = edge;
+
+    parseCategories(categories).forEach(category => {
+      if (!detectedCategoriesInPosts[category]) {
+        detectedCategoriesInPosts[category] = [];
+      }
+      detectedCategoriesInPosts[category].push(edge);
+    });
   });
 
   const categoryList = [];
 
-  for (var key in categories) {
-    categoryList.push ([key, categories[key]]);
+  for (var key in detectedCategoriesInPosts) {
+    categoryList.push([key, detectedCategoriesInPosts[key]]);
   }
 
   return (
@@ -38,13 +50,15 @@ const CategoryPage = props => {
         {theme => (
           <Article theme={theme}>
             <header>
-              <Headline title="Blogposts per categorie" theme={theme} />
+              <Headline title="🌄 Overzicht per categorie" theme={theme} />
             </header>
-            {categoryList.map (item => (
+            {categoryList.map(item => (
               <section key={item[0]}>
-                <h2>
-                  <FaTag /> {item[0]}
-                </h2>
+                <Link to={`category/${kebabCase(item[0])}`}>
+                  <h2>
+                    <FaTag /> {item[0]}
+                  </h2>
+                </Link>
                 <List edges={item[1]} theme={theme} />
               </section>
             ))}
@@ -68,7 +82,7 @@ const CategoryPage = props => {
 };
 
 CategoryPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 };
 
 export default CategoryPage;
@@ -89,7 +103,7 @@ export const query = graphql`
           }
           frontmatter {
             title
-            category
+            categories
             author
             cover {
               children {

@@ -1,6 +1,6 @@
 ---
 title: Babysit in Les Deux Alpes
-category: "kids en bergen"
+categories: "kids en bergen, les deux alpes"
 cover: kids.jpg
 author: Jonathan Dierckens
 ---

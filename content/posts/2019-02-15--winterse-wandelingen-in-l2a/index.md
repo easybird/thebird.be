@@ -1,6 +1,6 @@
 ---
 title: Winterse wandelingen in Les Deux Alpes
-category: "wandelen"
+categories: "wandelen"
 cover: les-deux-alpes-1800.jpg
 author: Jonathan Dierckens
 ---

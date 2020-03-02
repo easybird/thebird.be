@@ -1,51 +1,60 @@
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
 import { FaArrowRight } from "react-icons/fa/";
 import { FaCalendar } from "react-icons/fa/";
 import { FaTag } from "react-icons/fa/";
 import Img from "gatsby-image";
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
-import React from "react";
 import { parseCategories } from "../../utils/parseCategories";
 
-const Item = props => {
-  const {
-    theme,
-    post: {
-      excerpt,
-      fields: { slug, prefix },
-      frontmatter: {
-        title,
-        categories,
-        cover: {
-          children: [{ fluid }]
-        }
-      }
-    }
-  } = props;
+const DetailedList = props => {
+  const { edges, theme } = props;
 
   return (
     <React.Fragment>
-      <li>
-        <Link to={slug} key={slug} className="link">
-          <div className="gatsby-image-outer-wrapper">
-            <Img fluid={fluid} />
-          </div>
-          <h1>
-            {title} <FaArrowRight className="arrow" />
-          </h1>
-          <p className="meta">
-            <span>
-              <FaCalendar size={18} /> {prefix}
-            </span>
-            {parseCategories(categories).map(category => (
-              <span key={category}>
-                <FaTag size={18} /> {category}
-              </span>
-            ))}
-          </p>
-          <p>{excerpt}</p>
-        </Link>
-      </li>
+      <ul>
+        {edges.map(edge => {
+          const {
+            node: {
+              frontmatter: {
+                title,
+                categories,
+                cover: {
+                  children: [{ fluid }]
+                }
+              },
+              excerpt,
+              fields: { slug, prefix }
+            }
+          } = edge;
+
+          return (
+            <React.Fragment key={slug}>
+              <li>
+                <Link to={slug} key={slug} className="link">
+                  <div className="gatsby-image-outer-wrapper">
+                    <Img fluid={fluid} />
+                  </div>
+                  <h1>
+                    {title} <FaArrowRight className="arrow" />
+                  </h1>
+                  <p className="meta">
+                    <span>
+                      <FaCalendar size={18} /> {prefix}
+                    </span>
+                    {parseCategories(categories).map(category => (
+                      <span key={category}>
+                        <FaTag size={18} /> {category}
+                      </span>
+                    ))}
+                  </p>
+                  <p>{excerpt}</p>
+                </Link>
+              </li>
+            </React.Fragment>
+          );
+        })}
+      </ul>
 
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -55,6 +64,7 @@ const Item = props => {
         }
 
         li {
+          list-style: none;
           border: 1px solid transparent;
           border-radius: ${theme.size.radius.default};
           margin: ${`calc(${theme.space.default} * 2) 0 calc(${theme.space.default} * 3)`};
@@ -235,9 +245,9 @@ const Item = props => {
   );
 };
 
-Item.propTypes = {
-  post: PropTypes.object.isRequired,
+DetailedList.propTypes = {
+  edges: PropTypes.array.isRequired,
   theme: PropTypes.object.isRequired
 };
 
-export default Item;
+export default DetailedList;

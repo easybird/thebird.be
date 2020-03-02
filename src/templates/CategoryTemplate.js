@@ -6,18 +6,22 @@ import Seo from "../components/Seo";
 import { ThemeContext } from "../layouts";
 import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
-import List from "../components/List";
+import { DetailedList } from "../components/List";
 
 const CategoryTemplate = props => {
   const {
     pageContext: { category },
     data: {
-      allMarkdownRemark: { totalCount, edges },
+      allMarkdownRemark: { edges },
       site: {
         siteMetadata: { facebook }
       }
     }
   } = props;
+
+  {
+    console.log("detailedList for", category, edges);
+  }
 
   return (
     <React.Fragment>
@@ -26,17 +30,10 @@ const CategoryTemplate = props => {
           <Article theme={theme}>
             <header>
               <Headline theme={theme}>
-                <span>Posts in category</span> <FaTag />
+                <FaTag />
                 {category}
               </Headline>
-              <p className="meta">
-                There {totalCount > 1 ? "are" : "is"} <strong>{totalCount}</strong> post{totalCount >
-                1
-                  ? "s"
-                  : ""}{" "}
-                in the category.
-              </p>
-              <List edges={edges} theme={theme} />
+              <DetailedList edges={edges} theme={theme} />
             </header>
           </Article>
         )}
@@ -56,23 +53,33 @@ export default CategoryTemplate;
 
 // eslint-disable-next-line no-undef
 export const categoryQuery = graphql`
-  query PostsByCategory($category: String) {
+  query PostsByCategory($categoryRegex: String) {
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [fields___prefix], order: DESC }
-      filter: { frontmatter: { category: { eq: $category } } }
+      filter: { frontmatter: { categories: { regex: $categoryRegex } } }
     ) {
       totalCount
       edges {
         node {
           fields {
             slug
+            prefix
           }
           excerpt
           timeToRead
           frontmatter {
             title
-            category
+            categories
+            cover {
+              children {
+                ... on ImageSharp {
+                  fluid(maxWidth: 800, maxHeight: 360) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
           }
         }
       }
