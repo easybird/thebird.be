@@ -1,3 +1,8 @@
+# Dev tips
+
+- Run with node version lower than 12! Cfr. https://github.com/greglobinski/gatsby-starter-hero-blog/issues/111
+- How to lower node version easy: `n 11.6.0`
+
 # HeroBlog
 
 A [GatsbyJS](https://www.gatsbyjs.org/) blog starter. <br /><br />
